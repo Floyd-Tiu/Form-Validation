@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="EventForms.css">
+    <script src="Eventforms.js"></script>
+</head>
+<body>
+    <h1>Event Forms</h1>
+    <div class="box">
+        <label>Event type: </label>
+        <select id='type'>
+            <option value="Conference">Conference</option>
+            <option value="Seminar">Seminar</option>
+            <option value="Meeting">Meeting</option>
+            <option value="Team Building">Team Building</option>
+            <option value="Trade show">Trade Show</option>
+            <option value="Business dinner">Business dinner</option>
+            <option value="Press Conference">Press Conference</option>
+            <option value="Trade Fair">Trade Fair</option>
+            <option value="Award Ceremony">Award Ceremony</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Birthday Celebration">Birthday Celebration</option>            
+        </select> <br> <br>
+        <label>Event Title: </label> <input id="title" type="text" required> <br> <br>
+        <label>Event Dates: </label> <input id="datef" type="date" required> <label> to </label> <input id="datet" type="date"> <br> <br>
+        <label>Posting date: </label> <input id="post" type="date" required> <br> 
+        <br>
+        <input type="checkbox" id='reg'> <label>Is Registration required?</label> <br>
+        <input type="checkbox" id='family'> <label>Is this event associated with any Family Programs?</label> <br>
+        <input type="checkbox" id='email'> <label>Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label> <br>
+        <input type="checkbox" id='contact'> <label>Is there a point of contact?</label> <br>
+        <input type="checkbox" id='hosting command'> <label>Is there a hosting command point of contact?</label> <br> <br>
+    </div>
+
+        <button type="submit" class="button" onclick="submit()"> Save </button> <button type="button" class="button" onclick="exit()"> Cancel </button>
+</body>
+</html>
